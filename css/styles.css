@@ -54,7 +54,7 @@
     padding-left: 15px;
     margin-left:auto;
     margin-right:auto;
-   border: 2px solid rebeccapurple;
+   
   }
   
   .header {
@@ -315,7 +315,6 @@
 }
 .team-soc-icon {
 }
-}
 
 /* ----------------CUSTOMERS------------------------ */
 
@@ -329,6 +328,17 @@
   gap: 24px;
 }
 
+.customers-title {
+font-weight: 700;
+font-size: 36px;
+line-height: 1.11;
+text-align: center;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+color:var(--most-text-color);
+margin-bottom: 72px;
+}
+
 .customers-item {
   width: calc(( 100% - 120px ) / 6);
   height: 88px;
@@ -338,10 +348,21 @@
   height: 100%;
   border: 1px solid #8E8F99;
   border-radius: 4px;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #8e8f99;
 
 }
+.customers-link:is(:hover,:focus) {
+  border-color: var(--secondary-accent-color);}
+
+.customers-link:is(:hover,:focus) .customers-icon {
+  fill: var(--secondary-accent-color);
+}
 .customers-icon{
+  fill: #8e8f99;
+}
  
 }
 .link {
